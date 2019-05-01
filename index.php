@@ -7,7 +7,7 @@
 <div class="container">
 	<div class="row fancy-grid">
 	    <div class="fancy-heading">
-	        <h1 class="animated_heading" style="background-image: url(https://themegoods-cdn-pzbycso8wng.stackpathdns.com/musico/demo/wp-content/uploads/2018/10/ruvim-noga-711147-unsplash.jpg);">WebUI<br>A j e e t</h1>
+	        <h1 class="animated_heading" style="background-image: url(https://themegoods-cdn-pzbycso8wng.stackpathdns.com/musico/demo/wp-content/uploads/2018/10/ruvim-noga-711147-unsplash.jpg);">Anish Foods pvt. Ltd.</h1>
 	    </div>	
 	</div>
 </div>
