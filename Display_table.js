@@ -88,8 +88,10 @@ function display(arr, name_of_comp, admin) {
         cell = row.insertCell();
         cell.innerHTML = `<strong>Closing balace:${abs(eval(close_bal))}</strong>`;
     }
+    let calc_bal = close_bal - total;
+    console.log(calc_bal);
 
-
+    admin_button.remove();
     reset_button.position(windowWidth / 2, table.size().height + 300);
     httpGet(`${window.location.origin}/log.php?string=${encodeURIComponent(name_of_comp)}%20logged%20in`);
     document.getElementById("dev").style.display = "none";
