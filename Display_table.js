@@ -107,5 +107,5 @@ function display(arr, name_of_comp, admin) {
 
     document.querySelector("#loading").style.display = "none";
     document.querySelector(".wrapper").style.display = "none";
-    document.querySelector("body").bgColor = "white";
+    document.querySelector("body").background = "white";
 }

@@ -37,7 +37,7 @@ $r =  shell_exec('py.exe C:\inetpub\wwwroot\import_LoL.py');
 	/* BASIC */
 
 	html {
-		background-color: #56baed;
+		background-color: white;
 	}
 
 	body {
