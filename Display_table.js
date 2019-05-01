@@ -104,7 +104,6 @@ function display(arr, name_of_comp, admin) {
     // admin_button.remove();
     // reset_button.position(windowWidth / 2, table.size().height + 300);
     httpGet(`${window.location.origin}/log.php?string=${encodeURIComponent(name_of_comp)}%20logged%20in`);
-    // document.getElementById("dev").style.display = "none";
 
-    document.getElementById("loading").style.display = "none";
+    document.querySelector("#loading").style.display = "none";
 }
