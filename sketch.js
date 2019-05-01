@@ -73,6 +73,7 @@ function setup() {
     };
     var keyCode = e.keyCode || e.which;
     if (keyCode == 13) {
+      document.getElementById("loading").style.display = "block";
       Check_from_LoL()
     };
   }
