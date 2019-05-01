@@ -29,7 +29,7 @@ function display(arr, name_of_comp, admin) {
         let temp_array = arr[i].split(",") //.splice(2,1);
         temp_array.splice(2, 1);
         debugarr = temp_array;
-        // console.debug(temp_array);
+        console.debug(temp_array);
         if (temp_array[0] !== "\"\"") {
             for (let j = 0; j < temp_array.length; j++) {
                 var cell = row.insertCell();
