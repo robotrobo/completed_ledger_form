@@ -69,12 +69,12 @@ function display(arr, name_of_comp, admin) {
     let calc_opening = eval(close_bal) - total;
     console.log(`Calc opening = ${calc_opening}`);
     open_bal = calc_opening;
-    if (eval(open_bal) > 0) {
+    if (eval(open_bal) < 0) {
         cell = row.insertCell();
         cell.innerHTML = `<strong>Opening balace:${abs(eval(open_bal))}</strong>`;
         cell = row.insertCell();
         cell.innerHTML = "";
-    } else if (eval(open_bal) < 0) {
+    } else if (eval(open_bal) > 0) {
         cell = row.insertCell();
         cell.innerHTML = "";
         cell = row.insertCell();
@@ -89,12 +89,12 @@ function display(arr, name_of_comp, admin) {
     cell.innerHTML = "";
 
 
-    if (eval(close_bal) > 0) {
+    if (eval(close_bal) < 0) {
         cell = row.insertCell();
-        cell.innerHTML = `<strong>Closing- balace:${abs(eval(close_bal))}</strong>`;
+        cell.innerHTML = `<strong>Closing balace:${abs(eval(close_bal))}</strong>`;
         cell = row.insertCell();
         cell.innerHTML = "";
-    } else if (eval(close_bal) < 0) {
+    } else if (eval(close_bal) > 0) {
         cell = row.insertCell();
         cell.innerHTML = "";
         cell = row.insertCell();
