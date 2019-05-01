@@ -325,9 +325,6 @@ html,body{
 	   height: 100%;
 }
 
- body {
-     background: #0d161f;
-}
 
 #loading {
     position: absolute;
