@@ -4,6 +4,14 @@
 <html lang="en">
 
 <head>
+<div class="container">
+	<div class="row fancy-grid">
+	    <div class="fancy-heading">
+	        <h1 class="animated_heading" style="background-image: url(https://themegoods-cdn-pzbycso8wng.stackpathdns.com/musico/demo/wp-content/uploads/2018/10/ruvim-noga-711147-unsplash.jpg);">WebUI<br>A j e e t</h1>
+	    </div>	
+	</div>
+</div>
+
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet"
 		id="bootstrap-css">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
@@ -35,7 +43,25 @@ $r =  shell_exec('py.exe C:\inetpub\wwwroot\import_LoL.py');
 
 <style>
 	/* BASIC */
+	.fancy-heading {
+    font-size: 160px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.1em;
+    letter-spacing:5px;
+}
 
+.animated_heading {
+    margin: 0;
+    font-size: 80px;
+    color: #fff;
+    background-size: auto 200%;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 8s linear infinite;
+}
 
 	body {
 		font-family: "Poppins", sans-serif;
