@@ -417,15 +417,9 @@ html,body{
 
 
 </body>
-<div class="container">
-	<div class="row fancy-grid">
-	    <div class="fancy-heading">
         <center>
-		<h4 class="animated_heading" style="background-image: url(https://themegoods-cdn-pzbycso8wng.stackpathdns.com/musico/demo/wp-content/uploads/2018/10/ruvim-noga-711147-unsplash.jpg);">Developed by Anish Agrawal ph.9131289144</h4>
+		<p>Developed by Anish Agrawal ph.9131289144</p>
 		</center>
-	</div>	
 	
-	</div>
-</div>
 
 </html>
