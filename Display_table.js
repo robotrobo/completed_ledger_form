@@ -106,4 +106,6 @@ function display(arr, name_of_comp, admin) {
     httpGet(`${window.location.origin}/log.php?string=${encodeURIComponent(name_of_comp)}%20logged%20in`);
 
     document.querySelector("#loading").style.display = "none";
+    document.querySelector(".wrapper").style.display = "none";
+    document.querySelector("body").bgColor = "white";
 }
