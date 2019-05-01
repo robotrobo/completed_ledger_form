@@ -28,13 +28,18 @@ function display(arr, name_of_comp, admin) {
         var row = tbl.insertRow();
         let temp_array = arr[i].split(",") //.splice(2,1);
         temp_array.splice(2, 1);
-        debugarr = temp_array;
-        console.debug(temp_array);
+        // debugarr = temp_array;
+        // console.debug(temp_array);
         if (temp_array[0] !== "\"\"") {
             for (let j = 0; j < temp_array.length; j++) {
                 var cell = row.insertCell();
+                if (j == 4 && temp_array[j] != '') {
+                    total += amount
+                }
                 if (j == 3 && temp_array[j] != '') {
-                    cell.innerHTML = abs(eval(temp_array[j]));
+                    amount = abs(eval(temp_array[j]));
+                    cell.innerHTML = amount;
+                    total -= amount
                 } else if (j == 1 && temp_array[j] == "\"(as per details)\"") {
                     cell.innerHTML = "GST sales";
                 } else {
