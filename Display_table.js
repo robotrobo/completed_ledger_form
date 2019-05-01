@@ -94,6 +94,7 @@ function display(arr, name_of_comp, admin) {
     // let calc_bal = close_bal - total;
     console.log(`total debit: ${total_debit} \n total credit: ${total_credit}`);
     console.log(`total = ${total_credit - total_debit}`)
+    console.log(`Calc opening = ${(close_bal + total)* -1}`)
     // if all debit -> opening_bal = closing_bal - trans
     //  
 
