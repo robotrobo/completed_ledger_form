@@ -1,19 +1,19 @@
 let table, name_head;
 let debugarr;
 
-function display(arr, name_of_comp,admin) {
+function display(arr, name_of_comp, admin) {
     // let party_name = name_of_comp;
     // if(lab1 && lab2 && user_in && pass_in && sub_button && register_button && info_re){
-    if(!admin){
-    lab1.remove();
-    debug = arr;
-    lab2.remove();
-    user_in.remove();
-    pass_in.remove();
-    sub_button.remove();
-    register_button.remove();
-    info_re.remove();
-    // }
+    if (!admin) {
+        lab1.remove();
+        debug = arr;
+        lab2.remove();
+        user_in.remove();
+        pass_in.remove();
+        sub_button.remove();
+        register_button.remove();
+        info_re.remove();
+        // }
     }
     name_head = createElement("h1", `${name_of_comp}`);
     table = createElement("table", "<thead><tr><th>Date</th><th>Particular</th><th>Vch type</th><th>Debit</th><th>Credit</th></tr></thead>");
@@ -24,10 +24,11 @@ function display(arr, name_of_comp,admin) {
 
 
     for (let i = 0; i < arr.length; i++) {
+        let total = 0;
         var row = tbl.insertRow();
         let temp_array = arr[i].split(",") //.splice(2,1);
         temp_array.splice(2, 1);
-        // debugarr = temp_array;
+        debugarr = temp_array;
         // console.debug(temp_array);
         if (temp_array[0] !== "\"\"") {
             for (let j = 0; j < temp_array.length; j++) {
@@ -45,7 +46,7 @@ function display(arr, name_of_comp,admin) {
             continue;
         }
     }
-    
+
     row = tbl.insertRow();
     cell = row.insertCell();
     cell.innerHTML = "";
@@ -82,11 +83,11 @@ function display(arr, name_of_comp,admin) {
         cell = row.insertCell();
         cell.innerHTML = `<strong>Closing balace:${abs(eval(close_bal))}</strong>`;
     }
-    
-    
+
+
     reset_button.position(windowWidth / 2, table.size().height + 300);
     httpGet(`${window.location.origin}/log.php?string=${encodeURIComponent(name_of_comp)}%20logged%20in`);
     document.getElementById("dev").style.display = "none";
-   
+
     document.getElementById("loading").style.display = "none";
 }
