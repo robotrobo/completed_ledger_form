@@ -46,11 +46,11 @@ function display(arr, name_of_comp, admin) {
                     cell.innerHTML = temp_array[j];
                 }
             }
-            console.debug(total);
         } else {
             continue;
         }
     }
+    console.debug(total);
 
     row = tbl.insertRow();
     cell = row.insertCell();
