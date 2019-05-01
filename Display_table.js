@@ -2,6 +2,8 @@ let table, name_head;
 let debugarr;
 
 function display(arr, name_of_comp, admin) {
+
+    document.querySelector('body').style.background = "white";
     // let party_name = name_of_comp;
     // if(lab1 && lab2 && user_in && pass_in && sub_button && register_button && info_re){
     // if (!admin) {

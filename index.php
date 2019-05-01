@@ -36,9 +36,6 @@ $r =  shell_exec('py.exe C:\inetpub\wwwroot\import_LoL.py');
 <style>
 	/* BASIC */
 
-	html {
-		background-color: white;
-	}
 
 	body {
 		font-family: "Poppins", sans-serif;
@@ -325,6 +322,9 @@ html,body{
 	   height: 100%;
 }
 
+ body {
+     background: #0d161f;
+}
 
 #loading {
     position: absolute;
