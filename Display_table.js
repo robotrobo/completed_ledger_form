@@ -23,7 +23,9 @@ function display(arr, name_of_comp, admin) {
 
 
 
-    let total = 0;
+    let total_debit = 0;
+    let total_credit = 0;
+
     for (let i = 0; i < arr.length; i++) {
         var row = tbl.insertRow();
         let temp_array = arr[i].split(",") //.splice(2,1);
@@ -34,12 +36,13 @@ function display(arr, name_of_comp, admin) {
             for (let j = 0; j < temp_array.length; j++) {
                 var cell = row.insertCell();
                 if (j == 4 && temp_array[j] != '') {
-                    total += amount
+                    let amount = abs(eval(temp_array[j]));
+                    total_credit += amount;
                 }
                 if (j == 3 && temp_array[j] != '') {
-                    amount = abs(eval(temp_array[j]));
+                    let amount = abs(eval(temp_array[j]));
                     cell.innerHTML = amount;
-                    total -= amount
+                    total_debit += amount
                 } else if (j == 1 && temp_array[j] == "\"(as per details)\"") {
                     cell.innerHTML = "GST sales";
                 } else {
@@ -50,7 +53,7 @@ function display(arr, name_of_comp, admin) {
             continue;
         }
     }
-    console.debug(total);
+    // console.debug(total);
 
     row = tbl.insertRow();
     cell = row.insertCell();
@@ -88,8 +91,8 @@ function display(arr, name_of_comp, admin) {
         cell = row.insertCell();
         cell.innerHTML = `<strong>Closing balace:${abs(eval(close_bal))}</strong>`;
     }
-    let calc_bal = close_bal - total;
-    console.log(calc_bal);
+    // let calc_bal = close_bal - total;
+    console.log(`total debit: ${total_debit} \n total credit: ${total_credit}`);
 
     admin_button.remove();
     reset_button.position(windowWidth / 2, table.size().height + 300);
