@@ -93,6 +93,9 @@ function display(arr, name_of_comp, admin) {
     }
     // let calc_bal = close_bal - total;
     console.log(`total debit: ${total_debit} \n total credit: ${total_credit}`);
+    console.log(`total = ${total_credit - total_debit}`)
+    // if all debit -> opening_bal = closing_bal - trans
+    //  
 
     admin_button.remove();
     reset_button.position(windowWidth / 2, table.size().height + 300);
