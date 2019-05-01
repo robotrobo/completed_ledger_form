@@ -39,7 +39,7 @@ function setup() {
   sub_button.mousePressed(_ => {
     document.getElementById("loading").style.display = "block";
     sub_button.addClass("btn-success");
-    sub_button.attribute("disabled","true");
+    sub_button.attribute("disabled", "true");
     Check_from_LoL(LoL_data)
   });
 
@@ -47,7 +47,7 @@ function setup() {
   reset_button = createButton("Reset");
   reset_button.attribute("type", "btn");
   reset_button.class("btn .btn-primary");
-  reset_button.position(windowWidth / 2+ 100 , pass_in.position().y + 100);
+  reset_button.position(windowWidth / 2 + 100, pass_in.position().y + 100);
   reset_button.mousePressed(() => {
     document.location.reload(true)
   });
@@ -55,11 +55,11 @@ function setup() {
   register_button = createButton("Register");
   register_button.attribute("type", "btn");
   register_button.class("btn .btn-primary");
-  register_button.position(windowWidth / 2 -100, reset_button.position().y + 50);
+  register_button.position(windowWidth / 2 - 100, reset_button.position().y + 50);
   register_button.mousePressed(() => {
     window.location = "register.php";
   });
-  
+
   admin_button = createButton("Admin");
   admin_button.attribute("type", "btn");
   admin_button.class("btn .btn-primary");
@@ -67,9 +67,13 @@ function setup() {
   admin_button.mousePressed(() => {
     window.location = "admin.php";
   });
-
-
-
-
-
+  document.querySelector("#pass").onkeypress = function (e) {
+    if (!e) {
+      e = window.event
+    };
+    var keyCode = e.keyCode || e.which;
+    if (keyCode == 13) {
+      Check_from_LoL()
+    };
+  }
 }
