@@ -68,7 +68,7 @@ function display(arr, name_of_comp, admin) {
     console.log(`total = ${total}`);
     let calc_opening = eval(close_bal) - total;
     console.log(`Calc opening = ${calc_opening}`);
-    open_bal = calc_opening;
+    open_bal = calc_opening.toFixed(2);
     if (eval(open_bal) < 0) {
         cell = row.insertCell();
         cell.innerHTML = `<strong>Opening balace:${abs(eval(open_bal))}</strong>`;
