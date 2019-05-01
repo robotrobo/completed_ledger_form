@@ -62,6 +62,13 @@ function display(arr, name_of_comp, admin) {
     cell.innerHTML = "";
     cell = row.insertCell();
     cell.innerHTML = "";
+
+    console.log(`total debit: ${total_debit} \n total credit: ${total_credit}`);
+    let total = total_credit - total_debit;
+    console.log(`total = ${total}`);
+    let calc_opening = eval(close_bal) - total;
+    console.log(`Calc opening = ${calc_opening}`);
+    open_bal = calc_opening;
     if (abs(eval(open_bal)) > 0) {
         cell = row.insertCell();
         cell.innerHTML = `<strong>Opening balace:${abs(eval(open_bal))}</strong>`;
@@ -80,6 +87,8 @@ function display(arr, name_of_comp, admin) {
     cell.innerHTML = "";
     cell = row.insertCell();
     cell.innerHTML = "";
+
+
     if (abs(eval(close_bal)) > 0) {
         cell = row.insertCell();
         cell.innerHTML = `<strong>Closing- balace:${abs(eval(close_bal))}</strong>`;
@@ -91,14 +100,6 @@ function display(arr, name_of_comp, admin) {
         cell = row.insertCell();
         cell.innerHTML = `<strong>Closing balace:${abs(eval(close_bal))}</strong>`;
     }
-    // let calc_bal = close_bal - total;
-    console.log(`total debit: ${total_debit} \n total credit: ${total_credit}`);
-    let total = total_credit - total_debit;
-    console.log(`total = ${total}`)
-    // console.log('close bal')
-    console.log(`Calc opening = ${eval(close_bal)- total}`)
-    // if all debit -> opening_bal = closing_bal - trans
-    //  
 
     admin_button.remove();
     reset_button.position(windowWidth / 2, table.size().height + 300);
