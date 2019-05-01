@@ -23,8 +23,8 @@ function display(arr, name_of_comp, admin) {
 
 
 
+    let total = 0;
     for (let i = 0; i < arr.length; i++) {
-        let total = 0;
         var row = tbl.insertRow();
         let temp_array = arr[i].split(",") //.splice(2,1);
         temp_array.splice(2, 1);
