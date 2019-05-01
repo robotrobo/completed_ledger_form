@@ -4,19 +4,8 @@ let debugarr;
 function display(arr, name_of_comp, admin) {
 
     document.querySelector('body').style.background = "white";
-    // let party_name = name_of_comp;
-    // if(lab1 && lab2 && user_in && pass_in && sub_button && register_button && info_re){
-    // if (!admin) {
-    //     lab1.remove();
-    //     debug = arr;
-    //     lab2.remove();
-    //     user_in.remove();
-    //     pass_in.remove();
-    //     sub_button.remove();
-    //     register_button.remove();
-    //     info_re.remove();
-    //     // }
-
+    select('.fancy-grid').remove();
+    select('#footer').remove();
     name_head = createElement("h1", `${name_of_comp}`);
     table = createElement("table", "<thead><tr><th>Date</th><th>Particular</th><th>Vch type</th><th>Debit</th><th>Credit</th></tr></thead>");
     table.id("mytable");

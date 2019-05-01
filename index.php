@@ -398,15 +398,20 @@ html,body{
 			<input type="button" onclick="submitted();" id="sub_button" class="fadeIn fourth" value="Log In">
 		</form>
 
+
 		<!-- Remind Passowrd -->
 		<div id="formFooter">
 			<a id="register" class="underlineHover" href="register.php">Sign up</a> 
 			<br>
-			<a id="refresh" class="underlineHover" href="new_index.html">refresh</a>
+			<a id="refresh" class="underlineHover" href="index.php">refresh</a>
 		</div>
 
 	</div>
 </div>
+		<center>
+		<p id= 'footer'>Developed by Anish Agrawal ph.9131289144</p>
+		</center>
+
 
 <script src="sketch.js"></script>
 <script src="Check_from_LoL.js"></script>
@@ -417,9 +422,6 @@ html,body{
 
 
 </body>
-        <center>
-		<p>Developed by Anish Agrawal ph.9131289144</p>
-		</center>
 	
 
 </html>
