@@ -26,6 +26,9 @@ document.querySelector("#pass").onkeypress = function (e) {
 function submitted() {
   document.querySelector('form').style.display = 'none';
   document.querySelector('#formFooter').style.display = 'none';
+  document.querySelector('#loading').style.display = 'block';
+  document.querySelector('h1').style.display = 'none';
+  
   Check_from_LoL(LoL_data);
 
 }

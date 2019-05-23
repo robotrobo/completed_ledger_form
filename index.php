@@ -4,16 +4,6 @@
 <html lang="en">
 
 <head>
-<div class="container">
-	<div class="row fancy-grid">
-	    <div class="fancy-heading">
-        <center>
-		<h1 class="animated_heading" style="background-image: url(https://themegoods-cdn-pzbycso8wng.stackpathdns.com/musico/demo/wp-content/uploads/2018/10/ruvim-noga-711147-unsplash.jpg);">Anish Foods pvt. Ltd.</h1>
-		</center>
-	</div>	
-	
-	</div>
-</div>
 
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet"
 		id="bootstrap-css">
@@ -24,51 +14,39 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Anish Foods Pvt. Ltd.</title>
+
 </head>
 <div id="loading">
-  <div class="loader">
-    <div class="loader">
-        <div class="loader">
-           <div class="loader">
-           </div>
-        </div>
-    </div>
-  </div>
-</div> 
+	<div class="loader">
+		<div class="loader">
+			<div class="loader">
+				<div class="loader">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 <?php
 $r =  shell_exec('py.exe C:\inetpub\wwwroot\import_LoL.py');
 ?>
 
-<script type=text/javascript> let LoL_data=`<?php echo $r ?>`; </script> 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js"></script>
+<script type=text/javascript> let LoL_data=`<?php echo $r ?>`; </script> <script
+	src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js"></script>
 <script src="JavaScript-MD5-2.10.0/JavaScript-MD5-2.10.0/js/md5.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.min.js"></script>
 
 <style>
 	/* BASIC */
-	.fancy-heading {
-    font-size: 160px;
-    font-weight: 700;
-    text-transform: uppercase;
-    line-height: 1.1em;
-    letter-spacing:5px;
-}
 
-.animated_heading {
-    margin: 0;
-    font-size: 80px;
-    color: #fff;
-    background-size: auto 200%;
-    background-clip: text;
-    text-fill-color: transparent;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: shine 8s linear infinite;
-}
 
 	body {
 		font-family: "Poppins", sans-serif;
 		height: 100vh;
+	}
+
+	h1 {
+		color: #ffffff;
+		font-size: 80px;
 	}
 
 	a {
@@ -98,7 +76,8 @@ $r =  shell_exec('py.exe C:\inetpub\wwwroot\import_LoL.py');
 		flex-direction: column;
 		justify-content: center;
 		width: 100%;
-		min-height: 100%;
+		min-height: 300px;
+		height : 100%;
 		padding: 20px;
 	}
 
@@ -346,36 +325,47 @@ $r =  shell_exec('py.exe C:\inetpub\wwwroot\import_LoL.py');
 		width: 100%;
 	}
 
-html,body{
-       width: 100%;
-	   height: 100%;
-}
+	html,
+	body {
+		width: 100%;
+		height: 100%;
+	}
 
- body {
-     background: #0d161f;
-}
+	body {
+		background: #0d161f;
+	}
 
-#loading {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-	width: 150px;
-    height: 150px;	
-}
+	#loading {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 150px;
+		height: 150px;
+	}
 
-.loader {
-    width: calc(100% - 0px);
-	height: calc(100% - 0px);
-	border: 8px solid #162534;
-	border-top: 8px solid #09f;
-	border-radius: 50%;
-	animation: rotate 5s linear infinite;
-}
+	.loader {
+		width: calc(100% - 0px);
+		height: calc(100% - 0px);
+		border: 8px solid #162534;
+		border-top: 8px solid #09f;
+		border-radius: 50%;
+		animation: rotate 5s linear infinite;
+	}
 
-@keyframes rotate {
-100% {transform: rotate(360deg);}
-} 
+	.site-footer {
+		margin-top:-100px;
+		font-size : 25px;
+   		height:100px;
+		color : #5a6987;
+
+	}
+
+	@keyframes rotate {
+		100% {
+			transform: rotate(360deg);
+		}
+	}
 
 
 
@@ -389,7 +379,14 @@ html,body{
 		width: 60%;
 	}
 </style>
+<script>	
+	document.getElementById('loading').style.display = "none";
+</script>
 <div class="wrapper fadeInDown">
+	<center>
+		<h1>Anish Foods pvt. Ltd.</h1>
+	</center>
+
 	<div id="formContent">
 
 		<form>
@@ -401,16 +398,16 @@ html,body{
 
 		<!-- Remind Passowrd -->
 		<div id="formFooter">
-			<a id="register" class="underlineHover" href="register.php">Sign up</a> 
+			<a id="register" class="underlineHover" href="register.php">Sign up</a>
 			<br>
 			<a id="refresh" class="underlineHover" href="index.php">refresh</a>
 		</div>
 
 	</div>
 </div>
-		<center>
-		<p id= 'footer'>Developed by Anish Agrawal ph.9131289144</p>
-		</center>
+<center>
+	<footer class="site-footer"> Developed by Anish Agrawal (ph-9131289144)</footer>
+</center>
 
 
 <script src="sketch.js"></script>
@@ -422,6 +419,6 @@ html,body{
 
 
 </body>
-	
+
 
 </html>
