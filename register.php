@@ -62,7 +62,7 @@
     <script src="libraries/bootstrap.js"></script>
     <script src="libraries/p5.js"></script>
     <script src="libraries/p5.dom.js"></script>
-    <script src="JavaScript-MD5-2.10.0\JavaScript-MD5-2.10.0\js\md5.js"></script>
+    <script src="libraries/md5.js"></script>
     <script src="js/register.js"></script>
     <script src="js/Check_if_already_present.js"></script>
     <script src="js/Save_to_file.js"></script>

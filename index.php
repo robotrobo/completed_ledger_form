@@ -32,7 +32,7 @@ $r =  shell_exec('py.exe C:\inetpub\wwwroot\import_LoL.py');
 
 <script type=text/javascript> let LoL_data=`<?php echo $r ?>`; </script> <script
 	src="libraries/p5.min.js"></script>
-<script src="JavaScript-MD5-2.10.0/JavaScript-MD5-2.10.0/js/md5.js"></script>
+<script src="libraries/md5.js"></script>
 <script src="libraries/p5.dom.js"></script>
 
 <style>
