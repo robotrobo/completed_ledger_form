@@ -63,10 +63,10 @@
     <script src="libraries/p5.js"></script>
     <script src="libraries/p5.dom.js"></script>
     <script src="JavaScript-MD5-2.10.0\JavaScript-MD5-2.10.0\js\md5.js"></script>
-    <script src="register.js"></script>
-    <script src="Check_if_already_present.js"></script>
-    <script src="Save_to_file.js"></script>
-    <script src="Check_OTP.js"></script>
+    <script src="js/register.js"></script>
+    <script src="js/Check_if_already_present.js"></script>
+    <script src="js/Save_to_file.js"></script>
+    <script src="js/Check_OTP.js"></script>
     <script>
         window.onload = function(){ document.getElementById("loading").style.display = "none" }   ;
     </script>

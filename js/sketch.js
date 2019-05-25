@@ -18,7 +18,6 @@ document.querySelector("#pass").onkeypress = function (e) {
   };
   var keyCode = e.keyCode || e.which;
   if (keyCode == 13) {
-    // document.getElementById("loading").style.display = "block";
     submitted();
   };
 }
@@ -27,8 +26,7 @@ function submitted() {
   document.querySelector('form').style.display = 'none';
   document.querySelector('#formFooter').style.display = 'none';
   document.querySelector('#loading').style.display = 'block';
-  document.querySelector('h1').style.display = 'none';
-  
-  Check_from_LoL(LoL_data);
+  document.querySelector('h1').style.display = 'none';  
+  Check_from_LoL(LoL_data);  // In Check_from_loL.js
 
 }

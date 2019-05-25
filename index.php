@@ -31,9 +31,9 @@ $r =  shell_exec('py.exe C:\inetpub\wwwroot\import_LoL.py');
 ?>
 
 <script type=text/javascript> let LoL_data=`<?php echo $r ?>`; </script> <script
-	src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js"></script>
+	src="libraries/p5.min.js"></script>
 <script src="JavaScript-MD5-2.10.0/JavaScript-MD5-2.10.0/js/md5.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.min.js"></script>
+<script src="libraries/p5.dom.js"></script>
 
 <style>
 	/* BASIC */
@@ -410,10 +410,10 @@ $r =  shell_exec('py.exe C:\inetpub\wwwroot\import_LoL.py');
 </center>
 
 
-<script src="sketch.js"></script>
-<script src="Check_from_LoL.js"></script>
-<script src="Ledger_request.js"></script>
-<script src="Display_table.js"></script>
+<script src="js/sketch.js"></script>
+<script src="js/Check_from_LoL.js"></script>
+<script src="js/Ledger_request.js"></script>
+<script src="js/Display_table.js"></script>
 
 <body>
 

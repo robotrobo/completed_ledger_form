@@ -113,9 +113,7 @@ function display(arr, name_of_comp, admin) {
         cell.innerHTML = `<strong>${abs(eval(close_bal))}</strong>`;
     }
 
-    // admin_button.remove();
-    // reset_button.position(windowWidth / 2, table.size().height + 300);
-    httpGet(`${window.location.origin}/log.php?string=${encodeURIComponent(name_of_comp)}%20logged%20in`);
+    httpGet(`${window.location.origin}/php/log.php?string=${encodeURIComponent(name_of_comp)}%20logged%20in`);
 
     document.querySelector("#loading").style.display = "none";
     document.querySelector(".wrapper").style.display = "none";

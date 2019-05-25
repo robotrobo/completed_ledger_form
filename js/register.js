@@ -1,16 +1,7 @@
 let comp_in, pass_in, username_in, num_in, lab1, lab2, lab3, lab4;
-// let usernames = []
-    // username_file;
-// let LoL;
 let LoL_request = '<ENVELOPE> 	<HEADER>    		<VERSION>1</VERSION>    		<TALLYREQUEST>Export</TALLYREQUEST>    		<TYPE>Data</TYPE>    		<ID>List of Ledgers</ID> 	</HEADER><BODY><DESC><TDL><TDLMESSAGE><REPORT NAME="List of Ledgers" ISMODIFY="No" ISFIXED="No" ISINITIALIZE="No" ISOPTION="No" ISINTERNAL="No">  <FORMS>List of Ledgers</FORMS>   </REPORT><FORM NAME="List of Ledgers" ISMODIFY="No" ISFIXED="No" ISINITIALIZE="No" ISOPTION="No" ISINTERNAL="No">  <TOPPARTS>List of Ledgers</TOPPARTS>   <XMLTAG>"List of Ledgers"</XMLTAG>   </FORM><PART NAME="List of Ledgers" ISMODIFY="No" ISFIXED="No" ISINITIALIZE="No" ISOPTION="No" ISINTERNAL="No">  <TOPLINES>List of Ledgers</TOPLINES>   <REPEAT>List of Ledgers : Collection of Ledgers</REPEAT>   <SCROLLED>Vertical</SCROLLED>   </PART><LINE NAME="List of Ledgers" ISMODIFY="No" ISFIXED="No" ISINITIALIZE="No" ISOPTION="No" ISINTERNAL="No">  <LEFTFIELDS>List of Ledgers</LEFTFIELDS>   </LINE><FIELD NAME="List of Ledgers" ISMODIFY="No" ISFIXED="No" ISINITIALIZE="No" ISOPTION="No" ISINTERNAL="No">  <SET>$Name</SET>   <XMLTAG>"NAME"</XMLTAG>   </FIELD><COLLECTION NAME="Collection of Ledgers" ISMODIFY="No" ISFIXED="No" ISINITIALIZE="No" ISOPTION="No" ISINTERNAL="No">  <TYPE>Ledger</TYPE>   </COLLECTION>  </TDLMESSAGE>  </TDL></DESC></BODY></ENVELOPE>';
 
 function setup() {
-    // LoL= Lol_data;
-    // httpPost(url, LoL_request, (data) => LoL = data, function (err) {
-    //     console.debug(err);
-    // });
-
-    // username_file = loadStrings('Usernames_and_pass.txt');
     lab1 = createElement("label", "Enter your mobile number:");
     lab1.position(0, 100);
 
@@ -56,7 +47,7 @@ function setup() {
     sub_button.attribute("type", "btn");
     sub_button.class("btn .btn-primary");
     sub_button.position(windowWidth / 2, pass_in.position().y + 100);
-    sub_button.mousePressed(Check_if_already_present);
+    sub_button.mousePressed(Check_if_already_present); // Check_if_already_present.js
 
     reset_button = createButton("Reset");
     reset_button.attribute("type", "btn");
