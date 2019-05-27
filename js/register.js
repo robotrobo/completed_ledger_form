@@ -22,7 +22,7 @@ function setup() {
                      return false;
           }
          });
-      }); 
+      }); }
     username_in = createInput("", "text");
     username_in.position(num_in.position().x, num_in.position().y + 100);
     username_in.id("username");
@@ -57,5 +57,4 @@ function setup() {
     reset_button.mousePressed(() => {
         document.location.reload(true)
     });
-
-}}
+    }
