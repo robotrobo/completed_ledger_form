@@ -2,7 +2,7 @@
 
 function Check_OTP() {
     document.getElementById("loading").style.display = "none";
-    let send_url = `${window.location.origin}/otp_req.php?num=${num_in.value()}&method=request_otp`;
+    let send_url = `${window.location.origin}/php/otp_req.php?num=${num_in.value()}&method=request_otp`;
     // let bal_check_url = `https://2factor.in/API/V1/50900ad3-d2e6-11e8-a895-0200cd936042/BAL/SMS`;
     //send OTP
     // httpPost(send_url,req_suc, req_fail);
@@ -38,7 +38,7 @@ function req_fail(err) {
 }
 
 function Check_the_gen_otp(session_id, otp_entered) {
-    let check_url = `${window.location.origin}/otp_req.php?ses=${session_id}&otp=${otp_entered}&method=verify_otp`;
+    let check_url = `${window.location.origin}/php/otp_req.php?ses=${session_id}&otp=${otp_entered}&method=verify_otp`;
 
     httpGet(check_url, check_req_suc, check_req_fail);
 
@@ -52,11 +52,11 @@ function check_req_suc(data) {
         console.log("error");
     if (data.Details === "OTP Matched") {
 
-        httpGet(`${window.location.origin}/log.php?string=${encodeURIComponent(final_comp_name)}%20registered`);
+        httpGet(`${window.location.origin}/log/log.php?string=${encodeURIComponent(final_comp_name)}%20registered`);
         Save_to_file(final_comp_name, username_in.value(), pass_in.value());
     } else {
         alert("Sorry wrong otp, Try again");
-        window.location.href = "register.php";
+        window.location.href = "register/register.php";
 
     }
 }

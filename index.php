@@ -30,8 +30,8 @@
 $r =  shell_exec('py.exe C:\inetpub\wwwroot\import_LoL.py');
 ?>
 
-<script type=text/javascript> let LoL_data=`<?php echo $r ?>`; </script> <script
-	src="libraries/p5.min.js"></script>
+<script type=text/javascript> let LoL_data=`<?php echo $r ?>`; </script>
+<script src="libraries/p5.min.js"></script>
 <script src="libraries/md5.js"></script>
 <script src="libraries/p5.dom.js"></script>
 
@@ -367,7 +367,7 @@ $r =  shell_exec('py.exe C:\inetpub\wwwroot\import_LoL.py');
 		}
 	}
 
-
+   
 
 	/* OTHERS */
 
@@ -398,7 +398,7 @@ $r =  shell_exec('py.exe C:\inetpub\wwwroot\import_LoL.py');
 
 		<!-- Remind Passowrd -->
 		<div id="formFooter">
-			<a id="register" class="underlineHover" href="register.php">Sign up</a>
+			<a id="register" class="underlineHover" href="register/register.php">Sign up</a>
 			<br>
 			<a id="refresh" class="underlineHover" href="index.php">refresh</a>
 		</div>

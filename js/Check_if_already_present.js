@@ -57,7 +57,7 @@ function bal_suc(bal_dat) {
 
 function request_for_closing() {
     console.debug('reached here');
-    httpGet(`${window.location.origin}/make_bal_req.php`, bal_suc, bal_failure);
+    httpGet(`${window.location.origin}/php/make_bal_req.php`, bal_suc, bal_failure);
 
 }
 

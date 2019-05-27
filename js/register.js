@@ -22,11 +22,12 @@ function setup() {
                      return false;
           }
          });
-      });
+      }); 
     username_in = createInput("", "text");
     username_in.position(num_in.position().x, num_in.position().y + 100);
     username_in.id("username");
-    username_in.attribute("type", "text");
+    username_in.attrib
+    function submitted() {ute("type", "text");
     username_in.size(200);
     username_in.class("form-control");
 
