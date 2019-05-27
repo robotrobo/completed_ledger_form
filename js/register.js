@@ -58,4 +58,4 @@ function setup() {
         document.location.reload(true)
     });
 
-}
+}}

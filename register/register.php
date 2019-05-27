@@ -59,17 +59,17 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
 
-    <script src="libraries/bootstrap.js"></script>
-    <script src="libraries/p5.js"></script>
-    <script src="libraries/p5.dom.js"></script>
-    <script src="libraries/md5.js"></script>
-    <script src="js/register.js"></script>
-    <script src="js/Check_if_already_present.js"></script>
-    <script src="js/Save_to_file.js"></script>
-    <script src="js/Check_OTP.js"></script>
+    <script src="/libraries/bootstrap.js"></script>
+    <script src="/libraries/p5.js"></script>
+    <script src="/libraries/p5.dom.js"></script>
+    <script src="/libraries/md5.js"></script>
+    <script src="/js/register.js"></script>
+    <script src="/js/Check_if_already_present.js"></script>
+    <script src="/js/Save_to_file.js"></script>
+    <script src="/js/Check_OTP.js"></script>
     <script>
         window.onload = function(){ document.getElementById("loading").style.display = "none" }   ;
     </script>
-</body>
 
+</body>
 </html>
