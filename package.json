@@ -1,0 +1,19 @@
+{
+  "name": "htdocs",
+  "version": "1.0.0",
+  "description": "<<<<<<< HEAD\r # ledger_form\r simple ledger containing basic code\r =======\r A simple ledger form displaying data from tally",
+  "main": "Check_OTP.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robotrobo/ledger_form.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/robotrobo/ledger_form/issues"
+  },
+  "homepage": "https://github.com/robotrobo/ledger_form#readme"
+}
