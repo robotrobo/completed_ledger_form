@@ -410,10 +410,10 @@ $r =  shell_exec('C:\Users\Administrator\AppData\Local\Programs\Python\Python37\
 </center>
 
 
-<script src="sketch.js"></script>
-<script src="Check_from_LoL.js"></script>
-<script src="Ledger_request.js"></script>
-<script src="Display_table.js"></script>
+<script src="js/sketch.js"></script>
+<script src="js/Check_from_LoL.js"></script>
+<script src="js/Ledger_request.js"></script>
+<script src="js/Display_table.js"></script>
 
 <body>
 
