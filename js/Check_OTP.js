@@ -56,7 +56,7 @@ function check_req_suc(data) {
         Save_to_file(final_comp_name, username_in.value(), pass_in.value());
     } else {
         alert("Sorry wrong otp, Try again");
-        window.location.href = "register/register.php";
+        window.location.href = "register.php";
 
     }
 }
