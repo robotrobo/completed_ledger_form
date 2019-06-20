@@ -1,8 +1,6 @@
 <?php 
-// $name = $_GET['name'];
-// echo $name;
-// $string = ('py.exe C:\xampp\htdocs\import_bal.py ');
-$string = ('py.exe C:\inetpub\wwwroot\python\import_bal.py');
-$ans = shell_exec($string);
-echo $ans;
+$string = ('C:\Users\Administrator\AppData\Local\Programs\Python\Python37\python.exe C:\inetpub\wwwroot\import_bal.py ');
+$out ="";
+$out = shell_exec($string);
+echo $out;
 ?>
