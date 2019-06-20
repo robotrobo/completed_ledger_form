@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <center>
+        <h1>
+            Marks_calulator
+        </h1>
+    </center>
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.min.js"></script>
+<script src="calculator.js"></script>
+<style>
+    form {
+        overflow: hidden;
+    }
+
+    input {
+        float: right;
+        clear: both;
+    }
+</style>
+
+<body>
+    <center>
+        <form>
+            <label for="fa1">fa1 marks</label>
+            <input type="text" id="fa1">
+            <br>
+            <label for="fa2">fa2 marks</label>
+            <input type="text" id="fa2">
+            <br>
+            <label for="term1">half-yearly marks</label>
+            <input type="text" id="term1">
+            <br>
+            <label for="term2">annual marks</label>
+            <input type="text" id="term2">
+            <br>
+        </form>
+        <button id="submit">Submit</button>
+        <br>
+        <textarea id="answer" cols="30" rows="10"></textarea>
+
+    </center>
+
+</body>
+
+</html>
