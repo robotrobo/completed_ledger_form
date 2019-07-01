@@ -26,12 +26,12 @@ function bal_suc(bal_dat) {
                 document.getElementById("loading").style.display = "none"
             };
 
-            httpGet("php/test_dupli.php", (resp) => {
+            httpGet(`php/test_dupli.php?user=${username_in.value()}`, (resp) => {
                 console.log("Response from test_dupli: " + resp);
                 if (resp == "not present") Check_OTP();
                 else {
                     document.getElementById("loading").style.display = "none";
-                    alert("You are already registered press okay to go to the login page");
+                    alert("This username is already registered press okay to go to the login page");
                     window.location.href = "index.php";
                 }
             })
