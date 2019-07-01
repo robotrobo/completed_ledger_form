@@ -26,8 +26,8 @@ function bal_suc(bal_dat) {
                 document.getElementById("loading").style.display = "none"
             };
 
-            httpGet("test_dupli.php", (resp) => {
-                console.log(resp);
+            httpGet("php/test_dupli.php", (resp) => {
+                console.log("Response from test_dupli: " + resp);
                 if (resp == "not present") Check_OTP();
                 else {
                     document.getElementById("loading").style.display = "none";
