@@ -64,7 +64,7 @@ function request_for_closing() {
 function Check_if_already_present() {
     document.getElementById("loading").style.display = "block";
     console.log('button_pressed');
-   
+
 request_for_closing();
 
 }
