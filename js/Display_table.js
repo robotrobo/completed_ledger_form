@@ -7,6 +7,7 @@ function display(arr, name_of_comp, admin) {
     select('.site-footer').remove();
     name_head = createElement("h1", `${name_of_comp}`);
     document.getElementsByTagName('h1')[1].style.color = "black"
+    httpGet(`${window.location.origin}/php/log.php?string=${encodeURIComponent(name_of_comp)}%20logged%20in`);
     name_head.style.color = "black"
     table = createElement("table", "<thead><tr><th>Date</th><th>Particular</th><th>Vch type</th><th>Debit</th><th>Credit</th></tr></thead>");
     table.id("mytable");
@@ -113,7 +114,7 @@ function display(arr, name_of_comp, admin) {
         cell.innerHTML = `<strong>${abs(eval(close_bal))}</strong>`;
     }
 
-    httpGet(`${window.location.origin}/php/log.php?string=${encodeURIComponent(name_of_comp)}%20logged%20in`);
+  
 
     document.querySelector("#loading").style.display = "none";
     document.querySelector(".wrapper").style.display = "none";
