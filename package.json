@@ -1,0 +1,22 @@
+{
+  "name": "whatsapp_node_server",
+  "version": "1.0.0",
+  "description": "<<<<<<< HEAD # ledger_form simple ledger containing basic code ======= A simple ledger form displaying data from tally",
+  "main": "whatsapp_node_server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robotrobo/completed_ledger_form.git"
+  },
+  "author": "Anish Agrawal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/robotrobo/completed_ledger_form/issues"
+  },
+  "homepage": "https://github.com/robotrobo/completed_ledger_form#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
