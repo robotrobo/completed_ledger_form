@@ -1,6 +1,7 @@
 # is requested by the php file to call tally and ask for data
 import requests
 import sys
+
 if len(sys.argv) == 2:
 
     name = sys.argv[1]
@@ -15,4 +16,5 @@ if len(sys.argv) == 2:
 elif len(sys.argv) == 3:
     print("Only one arg needed")
 else:
-    print("please enter an arguement")
+    print(f"please enter an arguement instead of {len(sys.argv) - 1}")
+
