@@ -5,7 +5,7 @@ import sys
 if len(sys.argv) == 2:
 
     name = sys.argv[1]
-    req = '<ENVELOPE > <HEADER > <TALLYREQUEST > Export Data < /TALLYREQUEST > </HEADER > <BODY > <EXPORTDATA > <REQUESTDESC > <STATICVARIABLES > <!--Specify the FROM DATE here--> < SVFROMDATE > 20080401 < /SVFROMDATE > <!--Specify the TO DATE here--> < SVTODATE > 20200331 < /SVTODATE > <SVEXPORTFORMAT >$$SysName: ASCII < /SVEXPORTFORMAT > <!--Specify the LedgerName here--> < LEDGERNAME >{}< /LEDGERNAME > </STATICVARIABLES > <!--Report Name--> < REPORTNAME > Ledger Vouchers < /REPORTNAME > </REQUESTDESC > </EXPORTDATA > </BODY > </ENVELOPE >'.format(
+    req = '<ENVELOPE > <HEADER > <TALLYREQUEST > Export Data < /TALLYREQUEST > </HEADER > <BODY > <EXPORTDATA > <REQUESTDESC > <STATICVARIABLES > <!--Specify the FROM DATE here--> < SVFROMDATE > 20080401 < /SVFROMDATE > <!--Specify the TO DATE here--> < SVTODATE > 20220331 < /SVTODATE > <SVEXPORTFORMAT >$$SysName: ASCII < /SVEXPORTFORMAT > <!--Specify the LedgerName here--> < LEDGERNAME >{}< /LEDGERNAME > </STATICVARIABLES > <!--Report Name--> < REPORTNAME > Ledger Vouchers < /REPORTNAME > </REQUESTDESC > </EXPORTDATA > </BODY > </ENVELOPE >'.format(
         name)
     r = requests.post("http://anishfoods.in:9000", data=req)
     # r = requests.post("http://localhost:9000", data=req)
