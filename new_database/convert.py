@@ -3,14 +3,14 @@ import mysql.connector
 
 
 
-mydb = mysql.connector.connect(
-host = "localhost",
-user = "root",
-passwd = "9575024567",
-database = "phone_numbers"
-)
+# mydb = mysql.connector.connect(
+# host = "localhost",
+# user = "root",
+# passwd = "9575024567",
+# database = "phone_numbers"
+# )
 
-mycursor = mydb.cursor()
+# mycursor = mydb.cursor()
 
 
 
@@ -34,11 +34,11 @@ for ledger in collection.findall("LEDGER"):
         pass
 
 
-sql = "INSERT INTO numbers (comp, number) VALUES (%s, %s)"
+# sql = "INSERT INTO numbers (comp, number) VALUES (%s, %s)"
 
 
-mycursor.executemany(sql, entries)
-mydb.commit()
+# mycursor.executemany(sql, entries)
+# mydb.commit()
 
-print(mycursor.rowcount, "was inserted")
-# print(ent)
+# print(mycursor.rowcount, "was inserted")
+print(entries)
