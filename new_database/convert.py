@@ -1,22 +1,40 @@
 import xml.etree.ElementTree as ET
-import argparse
+import mysql.connector
 
 
-parser = argparse.ArgumentParser(description='Get ledger name for the specified number')
-parser.add_argument('--number', action='store', type=str, required = True, help='number of the ledger')
-args = parser.parse_args()
+
+mydb = mysql.connector.connect(
+host = "localhost",
+user = "root",
+passwd = "9575024567",
+database = "phone_numbers"
+)
+
+mycursor = mydb.cursor()
+
+
+
 
 
 root = ET.parse("balance.xml").getroot()
+
+
+
+entries = []
 
 for ledger in root.findall("LEDGER"):
     number = ""
     try:
         number = ledger.find("LEDGERMOBILE").text
-        # print(type(number), type(args.number))
-        if number == args.number:
-            print(ledger.attrib["NAME"].replace("&", "&amp;"))
+        entries.append((ledger.attrib["NAME"].replace("&", "&amp;"), number))
     except AttributeError:
         pass
 
-    
+
+sql = "INSERT INTO numbers (comp, number) VALUES (%s, %s)"
+
+
+mycursor.executemany(sql, entries)
+mydb.commit()
+
+print(mycursor.rowcount, "was inserted")
