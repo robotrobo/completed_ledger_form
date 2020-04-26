@@ -20,9 +20,12 @@ root = ET.parse("balance.xml").getroot()
 
 
 
+collection = root[1][1][0]
+
 entries = []
 
-for ledger in root.findall("LEDGER"):
+
+for ledger in collection.findall("LEDGER"):
     number = ""
     try:
         number = ledger.find("LEDGERMOBILE").text
@@ -38,3 +41,4 @@ mycursor.executemany(sql, entries)
 mydb.commit()
 
 print(mycursor.rowcount, "was inserted")
+# print(ent)
