@@ -5,3 +5,4 @@ bal_req = '<ENVELOPE>  <HEADER>  <VERSION>1</VERSION>  <TALLYREQUEST>EXPORT</TAL
 r = requests.post("http://anishfoods.in:9000", data=bal_req)
 # r = requests.post("http://localhost:9000", data=bal_req)
 print(r.text)
+
