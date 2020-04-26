@@ -17,7 +17,7 @@ con.connect(function (err) {
     if (err) throw err;
     con.query("SELECT comp from numbers where number=" + number, (err, result, fields) => {
         if (err) throw err;
-        console.log(fields);
+        // console.log(fields);
         console.log(result);
     })
   })
@@ -28,14 +28,15 @@ app.listen(port, () => console.log(`Example app listening at http://localhost:${
 app.post('/', (req, res) => {
 
     if(req.body.type == 'message'){
-        console.log(req)
+        // console.log(req)
         incoming = req.body.payload.payload["text"];
         in_Arr = incoming.split(" ");
         keyword = in_Arr.shift()  
         console.log(incoming);
 
         phone_number = req.body.payload.sender.phone
-
+        console.log(phone_number)
+        get_name(phone_number)
 
     }
 res.statuscode = 200 
