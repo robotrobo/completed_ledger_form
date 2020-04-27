@@ -54,7 +54,10 @@ app.post('/', (req, res) => {
                 res.statusCode =200
                 let bal = output[0]
                 let name = output[1].replace("\n", "")
-                res.send(`Hi M/s ${name} your closing balance is Rs. ${Math.abs(parseFloat(bal))}(${parseFloat(bal)<0?"dr":"cr"})\nThanks for contacting Anish Foods Raipur`)
+                let msg =`Hi M/s ${name} your closing balance is Rs. ${Math.abs(parseFloat(bal))}(${parseFloat(bal)<0?"dr":"cr"})\nThanks for contacting Anish Foods Raipur` 
+                exec(`py.exe C:\\inetpub\\wwwroot\\whatsapp_server\\text_vishal.py ${msg}`)
+                res.send(msg)
+            
             })
             
         }
