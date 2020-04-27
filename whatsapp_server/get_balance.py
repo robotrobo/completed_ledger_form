@@ -23,5 +23,6 @@ for ledger in collection.findall("LEDGER"):
     if mobile_element is not None:
         if mobile_element.text == number:
             print(ledger.find("CLOSINGBALANCE").text)
+            print(ledger.attrib['NAME'])
 
 
