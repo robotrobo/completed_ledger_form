@@ -31,34 +31,41 @@ function get_name(number){
 app.use(bodyParser.json())
 app.listen(port, () => console.log(`Example app listening at http://localhost:${port}`))
 app.post('/', (req, res) => {
-
+    let strToSend = "";
     if(req.body.type == 'message'){
         // console.log(req)
         incoming = req.body.payload.payload["text"];
         in_Arr = incoming.split(" ");
         keyword = in_Arr.shift()  
-        console.log(incoming);
+        // console.log(incoming);
 
         phone_number = req.body.payload.sender.phone
-        console.log(phone_number)
-        if (phone_number.length == 12 && phone_number.startWith("91")){
+        if (phone_number.length == 12 && phone_number.startsWith("91")){
             phone_number = phone_number.substring(2)
         }
+        console.log(phone_number)
         // let comp_name = get_name(phone_number)
-        
+        console.log(keyword)
+        // let bal = ""
         if (keyword == "bal"){
-
-            exec(`py.exe get_balance.py ${phone_number}`,  (err, stdout, stderr)=>{
-
-                console.log(stdout)
+            console.log("doing this")
+            let bal = ""
+            exec(`py.exe C:\\inetpub\\wwwroot\\whatsapp_server\\get_balance.py ${phone_number}`,  (err, stdout, stderr)=>{
+                if(err) console.log(err)
+                else if (stderr) console.log(stderr)
+                res.statusCode =200
+                strToSend = strToSend + stdout;
+                console.log(strToSend)
             })
         }
+        res.statuscode = 200 
+        // res.text = "heldedelo"
+        console.log(strToSend)
+        res.send(strToSend)
     }
-res.statuscode = 200 
-res.send("hello")
 
 })
 
 
 
-con.end()
+// con.end()
